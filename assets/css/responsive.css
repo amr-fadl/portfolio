@@ -1,0 +1,222 @@
+:root {
+  --min-color: #ebbb0f;
+  --min-color-two: #f2ede3;
+  /* --min-color:#d69a9a; */
+  /* --min-color:#C4C056; */
+  /* --min-color:#C9C9CB; */
+}
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 1200px) {
+  /*::::::::::::::::::::::::::::::::::::
+       portfolio
+    ::::::::::::::::::::::::::::::::::::*/
+  .portfolio {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 370px));
+  }
+}
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (max-width: 991px) {
+  html {
+    font-size: 17px;
+  }
+  /*::::::::::::::::::::::::::::::::::::
+        header 
+    ::::::::::::::::::::::::::::::::::::*/
+
+  /* start text header  */
+  .text-header .hero-content {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /*::::::::::::::::::::::::::::::::::::
+       About Area
+    ::::::::::::::::::::::::::::::::::::*/
+  .shape-img {
+    height: 300px;
+  }
+
+  .hit {
+    height: 373px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /*::::::::::::::::::::::::::::::::::::
+        header 
+    ::::::::::::::::::::::::::::::::::::*/
+
+  /* start navbar  */
+  #navbar .d-grid {
+    position: relative;
+    grid-template-columns: 50% 50%;
+  }
+
+  #navbar .list-icon {
+    display: flex;
+  }
+
+  .nav .d-grid {
+    height: 50px;
+  }
+
+  #navbar .all-list-nav {
+    right: 0;
+    top: 50%;
+    flex-direction: column;
+    grid-column: 2 / -1;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .nav .site-logo {
+    grid-column: 1 / 2;
+    justify-content: flex-start;
+  }
+
+  .app-ul {
+    width: 230px !important;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: darkgray;
+    display: none;
+  }
+
+  .app-ul::before {
+    content: "";
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: -7px;
+    right: 4px;
+    background-color: darkgray;
+    transform: rotate(45deg);
+  }
+
+  .nav .site-nav-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .app-ul li {
+    padding: 20px;
+    line-height: 1;
+    width: 100%;
+    text-align: center;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+  }
+
+  .app-ul li:hover {
+    border-color: var(--min-color);
+  }
+  .app-ul li:not(.last-link) {
+    padding-bottom: 0px;
+  }
+
+  .app-ul li a {
+    line-height: 1;
+  }
+
+  .app-ul li:hover a {
+    color: var(--min-color);
+  }
+
+  /* start text header  */
+  .text-header .hero-content {
+    position: relative;
+    z-index: 2;
+    width: 250px;
+  }
+
+  .text-header .hero-content h2,
+  .text-header .hero-content h3,
+  .text-header .hero-content a {
+    color: #fff !important;
+    border-color: #fff !important;
+  }
+
+  .text-header .hero-content p {
+    color: #333;
+  }
+
+  /*::::::::::::::::::::::::::::::::::::
+       About Area
+    ::::::::::::::::::::::::::::::::::::*/
+  .shape-img {
+    height: 350px;
+    max-width: 350px;
+  }
+
+  /*::::::::::::::::::::::::::::::::::::
+       footer
+    ::::::::::::::::::::::::::::::::::::*/
+  footer .social_icon li a {
+    font-size: 1.3rem;
+  }
+
+  footer .menu li li a {
+    font-size: 0.3rem;
+  }
+}
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 576px) {
+  html {
+    font-size: 15px;
+  }
+
+  /*::::::::::::::::::::::::::::::::::::
+       header
+    ::::::::::::::::::::::::::::::::::::*/
+  /* start text header  */
+  .text-header .hero-content {
+    width: 200px;
+  }
+}
+@media only screen and (min-width: 767px) {
+  /*::::::::::::::::::::::::::::::::::::
+       About Area
+    ::::::::::::::::::::::::::::::::::::*/
+}
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /*::::::::::::::::::::::::::::::::::::
+    Portfolio Section
+    ::::::::::::::::::::::::::::::::::::*/
+
+  /*::::::::::::::::::::::::::::::::::::
+    Contact Area 
+    ::::::::::::::::::::::::::::::::::::*/
+  .contact-form {
+    padding: 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /*::::::::::::::::::::::::::::::::::::
+       About Area
+    ::::::::::::::::::::::::::::::::::::*/
+  .app-img-stky {
+    padding: 0 10px;
+  }
+  .work-list ul li {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 5px 3px;
+  }
+  footer .menu li a {
+    font-size: 0.7rem;
+  }
+  footer p{
+    font-size: 1rem;
+  }
+}
